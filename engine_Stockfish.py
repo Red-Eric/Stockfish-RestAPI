@@ -2,7 +2,7 @@ from stockfish import Stockfish
 
 class Engine:
     def __init__(self):
-        self.engine = Stockfish(path="D://Stockfish//17.exe", depth = 12)
+        self.engine = Stockfish(path="engineExecutable/stockfish.exe", depth = 12)
         self.engine.set_skill_level(20)
 
     def get_Data(self, fen):
@@ -21,7 +21,6 @@ class Engine:
                     evalList.append(f"Mate : {move["Mate"]}")
                 else:
                     evalList.append(f"Eval : {move["Centipawn"] / 100}")
-
 
             if(self.engine.get_evaluation()['type'] == "mate"):
                 score = f"Mate : {self.engine.get_evaluation()['value']}"
