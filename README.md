@@ -1,6 +1,7 @@
 ﻿# Stockfish REST API
 
 A simple REST API built with Flask that uses the Stockfish chess engine to calculate the best move from a given FEN position.
+Download the .exe in the official website : https://stockfishchess.org/
 
 ## Features
 
